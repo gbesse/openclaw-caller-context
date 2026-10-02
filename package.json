@@ -1,0 +1,29 @@
+{
+  "name": "@gbesse/openclaw-caller-context",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "FR : recherche bornée d'appelant ; EN: bounded caller lookup; ES: búsqueda acotada de llamantes",
+  "openclaw": {
+    "extensions": [
+      "./index.js"
+    ]
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.9.4"
+  },
+  "dependencies": {
+    "typebox": "1.3.34"
+  },
+  "files": [
+    "index.js",
+    "lookup.js",
+    "openclaw.plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}

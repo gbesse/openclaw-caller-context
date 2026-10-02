@@ -1,0 +1,17 @@
+{
+  "id": "caller-context",
+  "name": "Caller Context",
+  "description": "FR : contexte d'appelant local ; EN: local caller context; ES: contexto local del llamante",
+  "categories": ["voice"],
+  "contracts": { "tools": ["caller_context_lookup"] },
+  "activation": { "onStartup": true },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "contactsFile": { "type": "string" },
+      "timeoutMs": { "type": "integer", "minimum": 50, "maximum": 2000 },
+      "locale": { "type": "string", "enum": ["fr", "en", "es"] }
+    }
+  }
+}
